@@ -25,8 +25,10 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   createCanvas(1200,400);
-  
-  polygon1 = Bodies.circle(900,200,20);
+  var options = {
+  density: 1
+  }
+  polygon1 = Bodies.circle(900,200,20,options);
 
   World.add(world,polygon1);
 
